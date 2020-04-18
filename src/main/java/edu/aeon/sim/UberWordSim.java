@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class UberWordSim extends WordSim {
 
-    private static final String NAME = WordSim.class.getCanonicalName();
+    private static final String NAME = UberWordSim.class.getCanonicalName();
     private static final String IWN_FIELD_NAME = "iwn";
 
     public Measure measure;
