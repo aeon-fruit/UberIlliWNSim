@@ -14,6 +14,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+
+        <github.global.server>github</github.global.server>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <repositories>
@@ -90,4 +94,19 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <scm>
+        <url>https://github.com/aeon-fruit/maven-packages</url>
+        <connection>scm:git:git://github.com/aeon-fruit/maven-packages.git</connection>
+        <developerConnection>scm:git:git@github.com:aeon-fruit/maven-packages.git</developerConnection>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub aeon-fruit Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/aeon-fruit/maven-packages</url>
+        </repository>
+    </distributionManagement>
+
 </project>

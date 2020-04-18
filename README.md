@@ -17,6 +17,30 @@ As implied above, this client extension has two goals :
 This library requires WordNet&reg; 3.0 which is available on [the official source](https://wordnet.princeton.edu/download/current-version). 
 Obviously, the downloaded archive should be extracted to the file system to have a path that could be fed to the main API.
 
+The appropriate dependency to the library should be added to pom.xml:
+```xml
+<dependency>
+    <groupId>edu.aeon</groupId>
+    <artifactId>uberwnillisim</artifactId>
+    <version>0.9.0</version>
+</dependency>
+```
+
+The repository containing the dependency should be included in the pom.xml configuration as well:
+```xml
+<repositories>
+    <repository>
+        <id>github</id>
+        <name>GitHub aeon-fruit Apache Maven Packages</name>
+        <url>https://maven.pkg.github.com/aeon-fruit/maven-packages</url>
+        <releases><enabled>true</enabled></releases>
+        <snapshots><enabled>true</enabled></snapshots>
+    </repository>
+</repositories>
+```
+
+A further minor configuration is mandatory for downloading GitHub Maven packages as described in [this page](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages#installing-a-package).
+
 The most common use of the library would be to instantiate `UberWordSim` and call its `compare` method like the following:
 ```java
 class Example {
