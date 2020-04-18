@@ -1,7 +1,6 @@
 package edu.aeon.sim;
 
 import edu.cmu.lti.ws4j.WS4J;
-import edu.illinois.cs.cogcomp.core.utilities.configuration.ResourceManager;
 import edu.illinois.cs.cogcomp.sim.MetricResponse;
 import edu.illinois.cs.cogcomp.sim.MetricWord;
 import edu.illinois.cs.cogcomp.sim.WordSim;
@@ -17,22 +16,13 @@ public class UberWordSim extends WordSim {
 
     public Measure measure;
 
-    public UberWordSim(Measure measure) throws IOException {
-        super(measure.toString());
+    public UberWordSim(Measure measure, String wnPath) throws IOException {
+        super(measure.toString(), ResourceManagerFactory.get(wnPath));
         this.measure = measure;
     }
 
-    public UberWordSim() throws IOException {
-        super();
-    }
-
-    public UberWordSim(Measure measure, ResourceManager rm) throws IOException {
-        super(measure.toString(), rm);
-        this.measure = measure;
-    }
-
-    public UberWordSim(ResourceManager rm) throws IOException {
-        super(rm);
+    public UberWordSim(String wnPath) throws IOException {
+        super(ResourceManagerFactory.get(wnPath));
     }
 
     public MetricResponse compare(String small, String big) {
@@ -88,8 +78,8 @@ public class UberWordSim extends WordSim {
         return new MetricResponse(score, NAME + ":" + measureName);
     }
 
-    public MetricResponse compare(MetricWord arg1, MetricWord arg2) throws IllegalArgumentException {
-        return compare(arg1.word, arg2.word);
+    public MetricResponse compare(MetricWord first, MetricWord second) throws IllegalArgumentException {
+        return compare(first.word, second.word);
     }
 
     @Override
