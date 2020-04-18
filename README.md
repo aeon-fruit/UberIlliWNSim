@@ -7,7 +7,7 @@ It implements several state-of-the-art similarity measures, but it has few unfor
 First of all, it exposes only two of the implemented measures (perhaps the rest of them are not quite polished). 
 The least of all, it has a rather inconvenient way of handling file-based configuration. 
 Yet the biggest of all, Illinois WNSim has a restrictive clause in its license regarding the distribution of derivative code. 
-That pushed me to make this tiny extension as a client library with a dependency to the Illinois WNSim artifact published on Maven Central Repository.
+That urged me to make this tiny extension, as a client library, to avoid touching the original source code, but with a dependency to the Illinois WNSim artifact published on Maven Central Repository.
 
 As implied above, this client extension has two goals :
 1. to expose all the similarity measures implemented in Illinois WNSim; and
