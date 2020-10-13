@@ -22,7 +22,7 @@ The appropriate dependency to the library should be added to pom.xml:
 <dependency>
     <groupId>edu.aeon</groupId>
     <artifactId>uberwnillisim</artifactId>
-    <version>0.9.0</version>
+    <version>0.9.1</version>
 </dependency>
 ```
 
