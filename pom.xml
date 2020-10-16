@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.aeon</groupId>
-    <artifactId>UberIlliWNSim</artifactId>
+    <artifactId>uber-illi-wnsim</artifactId>
     <version>0.9.2</version>
     <name>Uber Illi WNSim</name>
     <url>https://github.com/aeon-fruit/UberIlliWNSim</url>

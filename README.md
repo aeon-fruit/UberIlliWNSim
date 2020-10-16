@@ -21,7 +21,7 @@ The appropriate dependency to the library should be added to pom.xml:
 ```xml
 <dependency>
     <groupId>edu.aeon</groupId>
-    <artifactId>UberIlliWNSim</artifactId>
+    <artifactId>uber-illi-wnsim</artifactId>
     <version>0.9.2</version>
 </dependency>
 ```
