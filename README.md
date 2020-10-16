@@ -1,4 +1,4 @@
-# Uber WN IlliSim
+# Uber Illi WNSim
 An extension of Illinois WNSim as a client library.
 
 ## Context
@@ -66,7 +66,7 @@ class Example {
 ```
 
 ## Disclaimer and citations
-Before using Uber WN IlliSim, you should be fully aware, while this library is under the MIT license, its main dependency, namely Illinois WNSim, has a proprietary license.
+Before using Uber Illi WNSim, you should be fully aware, while this library is under the MIT license, its main dependency, namely Illinois WNSim, has a proprietary license.
 
 https://cogcomp.seas.upenn.edu/page/software_view/IllinoisWNSimJava
 
