@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.aeon</groupId>
-    <artifactId>uberwnillisim</artifactId>
-    <version>0.9.1</version>
-    <name>Uber WN IlliSim</name>
-    <url>https://github.com/aeon-fruit/uberwnillisim</url>
+    <artifactId>UberIlliWNSim</artifactId>
+    <version>0.9.2</version>
+    <name>Uber Illi WNSim</name>
+    <url>https://github.com/aeon-fruit/UberIlliWNSim</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
